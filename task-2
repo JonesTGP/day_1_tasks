@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects and its internal representation in Javascript</title>
+  <style>
+    body{
+      font-family:sans-serif ;
+      background-color: #F4F2EA;
+      color: #493932;
+    }
+    .container{
+      max-width: 900px;
+      margin: auto;
+      border: 6px solid #A99C9C;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .date{
+      letter-spacing: 1.4px;
+      font-weight:600;
+      color: #3e3e3e;
+      text-transform: uppercase;
+    }
+    .heading{
+      border-left: 5px solid #8AC43F;
+      color: #3e3e3e;
+      padding-left: 6px;
+    }
+    .num{
+      color: #8AC43F;
+    }
+    .pow{
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="date">
+      <p>november 29<sup class="pow">th</sup> 2022</p>
+    </div>
+
+      <h1 class="heading">
+        Objects and its internal representation in Javascript
+      </h1>
+      <p>
+        Objects in JavaScript, is it's most important data-type and forms the building blocks for modern JavaScript.      
+      </p>
+      <p>
+        These objects are quite different from JavaScript's primitive data-types in the sense that while these primitive data-types all store a single value each.
+      </p>
+      <p>
+        objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties
+      </p>
+      <hr>
+
+      <h2 class="heading">
+        An object, is a reference data type. 
+      </h2>
+      <p>
+        Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+      </p>
+      <p>
+        Variables that are assigned a reference value are given a reference or a pointer to that value.
+      </p>
+      <p>
+        That reference or pointer points to the location in memory where the object is stored.The variables itself don't actually store the value.      
+      </p>
+      <hr>
+
+      <h2 class="heading">
+        Objects and properties
+      </h2>
+      <p>
+        A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. 
+      </p>
+      <p>
+        You access the properties of an object with a simple dot-notation.
+        <br>
+        Syntax: 
+        <br>
+        objectName.propertyName      
+      </p>
+      <p>
+        Like all JavaScript variables, both the object name <i>(which could be a normal variable)</i> and property name are case sensitive.
+      </p>
+      <p>
+        Properties of JavaScript objects can also be accessed or set using a bracket notation. Objects are sometimes called associative arrays, since each property is associated with a string value that can be used to access it.
+      </p>
+      <hr>
+
+      <h2 class="heading">
+        Creating Objects In JavaScript
+      </h2>
+      <p>
+        <li>Create JavaScript Object with Object Literal</li>
+          <br>
+          One of easiest way to create a javascript object is object literal, simply define the property and values inside curly braces as shown below
+        <br>
+        eg:
+        <br>
+        let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+      </p>
+      <p>
+        <li>Create JavaScript Object with Constructor</li>
+          <br>
+        Constructor is nothing but a function and with help of new keyword, constructor function allows to create multiple objects of same flavor as shown below
+        <br>
+        eg:
+        <br>
+        function Vehicle(name, maker) {
+          <br> 
+          this.name = name;
+          <br> 
+          this.maker = maker;
+        <br>
+        } <br>
+        let car1 = new Vehicle('Fiesta', 'Ford'; <br>
+        let car2 = new Vehicle('Santa Fe', 'Hyundai') <br>
+        console.log(car1.name);    //Output: Fiesta <br>
+        console.log(car2.name);    //Output: Santa Fe <br>
+      </p>
+      <p>
+        <li>Using the JavaScript Keyword new</li>
+          <br>
+        Using the JavaScript Keyword new,the following example also creates a new JavaScript object with four properties:
+        <br>
+        eg: <br>
+        var person = new Object(); <br>
+        person.firstName = “John”; <br>
+        person.lastName = “Doe”; <br>
+        person.age = 50; <br>
+        person.eyeColor = “blue”; <br>
+      </p>
+      <hr>
+
+  </div>
+</body>
+</html>
